@@ -1,0 +1,8 @@
+@mixin appearance($properties: none) {
+  appearance: $properties;
+  -webkit-appearance: $properties;
+  -moz-appearance: $properties;
+}
+@mixin outline ($properties: none) {
+  outline: $properties;
+}

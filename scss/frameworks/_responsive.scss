@@ -1,0 +1,35 @@
+
+@media (min-width: 1280px) {
+  .sidebar {
+    transform: translate(260px);
+  }
+
+  .topbar {
+    &__link {
+      &.--toggle {
+        display: none;
+      }
+      &.--system{
+        display: none;
+      }
+    }
+  }
+
+  .page-content {
+    margin-left: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    &__link {
+      display: none;
+      &.--toggle {
+        display: block;
+      }
+      &.--system{
+        display: block;
+      }
+    }
+  }
+}

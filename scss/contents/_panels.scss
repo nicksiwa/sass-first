@@ -1,0 +1,28 @@
+
+.panel {
+  border: 1px solid $default-border-color;
+
+  &__header {
+    font-size: 16px;
+    font-weight: bold;
+    color: $alt-font-color;
+    background-color: $primary-color;
+    padding: 10px;
+  }
+
+  &__content {
+    font-size: 20px;
+    color: $default-font-color;
+    background-color: $default-bg-color;
+    padding: 10px;
+    border-top: 1px solid $default-border-color;
+  }
+
+  &__footer {
+    font-size: 15px;
+    color: $default-font-color;
+    background-color: $default-bg-color;
+    padding: 10px;
+    border-top: 1px solid $default-border-color;
+  }
+}

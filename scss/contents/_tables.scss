@@ -1,0 +1,43 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 10px 0;
+
+  &__row {
+    background-color: $default-bg-color;
+
+    &:first-child {
+      background-color: inherit;
+    }
+  }
+
+  &__cell {
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid $default-border-color;
+  }
+
+  &__select {
+    padding: 5px;
+    width: 100%;
+  }
+
+  &__pagination {
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration: none;
+    border-radius: 0;
+    @include color();
+    margin: 2px;
+    padding: 7px 5px 3px;
+    font-size: 12px;
+
+    &.--active {
+      @include color($alt-font-color,$primary-color);
+      font-size: 18px;
+      padding: 2px 5px;
+    }
+  }
+}

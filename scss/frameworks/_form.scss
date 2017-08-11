@@ -1,0 +1,113 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-indent {
+  text-indent: 50px;
+}
+
+.page-content {
+  min-height: 100%;
+  overflow-x: hidden;
+  margin-left: 0;
+  transition: margin-left 0.2s;
+
+  &__margin-top {
+    margin-top: 50px;
+  }
+}
+
+.form-control {
+  display: block;
+  padding-top: 10px;
+  width: 100%;
+
+  &__label {
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40%;
+  }
+
+  &__input {
+    font-size: 16px;
+  }
+
+  &__checkbox {
+    width: 100%;
+    margin-left: 20px;
+    font-size: 16px;
+    display: block;
+  }
+}
+
+input[type="text"] {
+  @include appearance;
+  @include outline;
+  font-family: $font;
+  box-sizing: border-box;
+  border: 1px solid $default-border-color;
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  @include appearance;
+  @include outline;
+  border: 2px solid $default-border-color;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+
+  &:checked {
+    background-color: $primary-color;
+  }
+}
+
+input[type="checkbox"] {
+  @include appearance;
+  @include outline;
+  border: 1px solid $default-border-color;
+  width: 25px;
+  height: 25px;
+  position: inline-block;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 10px;
+
+  &:checked::after {
+    bottom: 5px;
+    left: 6px;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 18px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+select {
+  @include appearance;
+  @include outline;
+  border: 1px solid $default-border-color;
+  font-family: $font;
+  font-size: 16px;
+  background-image: url('../../rs/img/arrow_bottom.svg');
+  background-size: 16px;
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}

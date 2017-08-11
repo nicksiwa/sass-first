@@ -1,0 +1,27 @@
+
+.btn {
+  width: 70px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: $font;
+
+  &.--primary{
+    @include color($alt-font-color,$primary-color);
+  }
+
+  &.--default{
+    @include color();
+  }
+
+  &.--success{
+    @include color();
+  }
+
+  &.--small{
+    font-size: 13px;
+    width: 70px;
+    padding: 0px;
+  }
+}

@@ -1,0 +1,19 @@
+
+.list {
+    font-weight: bold;
+    list-style-type: none;
+  &__item {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid $default-border-color;
+    background-color: $default-bg-color;
+
+    &:not(:first-child) {
+      border-top: 0;
+    }
+
+    &.--active {
+      color: $primary-color;
+    }
+  }
+}

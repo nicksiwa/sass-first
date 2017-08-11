@@ -1,0 +1,8 @@
+@mixin color ($default-font-color: #000000,$default-bg-color: #cccccc) {
+  color: $default-font-color;
+  background-color: $default-bg-color;
+  &:hover {
+    color: lighten($default-font-color, 100%);
+    background-color: darken($default-bg-color, 10%);
+  }
+}
