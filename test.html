@@ -150,7 +150,7 @@
               </tr>
               <tr>
                 <td class="form-control__label"></td>
-                <td class="form-control__input">
+                <td class="form-control__input --info">
                   (ข้อมูล ณ วันที่ 27 ต.ค. 2559 ท่านสามารถแก้ไขให้เป็นข้อมูลปัจจุบันได้)
                 </td>
               </tr>
@@ -219,18 +219,5 @@
     </div>
   </div>
 </body>
-<script>
-  $('#toggle').click(function() {
-    $('#sidebar').toggleClass(' --show');
-  });
-
-  $('#heartLink').click(function() {
-    $('#subMenu').toggle("up");
-  });
-
-  $('#moreInfo').click(function() {
-    $('#hideInfo').toggle("up");
-  });
-</script>
-
+<script src="js/toggle.js" type="text/javascript"></script>
 </html>

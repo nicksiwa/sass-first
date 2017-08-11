@@ -37,6 +37,12 @@
 
   &__input {
     font-size: 16px;
+
+    &.--info{
+      padding: 0 0 10px;
+      font-size: 13px;
+      color: #888;
+    }
   }
 
   &__checkbox {
@@ -61,7 +67,7 @@ input[type="text"] {
 input[type="radio"] {
   @include appearance;
   @include outline;
-  border: 2px solid $default-border-color;
+  border: 3px solid $default-border-color;
   width: 20px;
   height: 20px;
   top: 5px;
@@ -87,13 +93,13 @@ input[type="checkbox"] {
   margin-right: 10px;
 
   &:checked::after {
-    bottom: 5px;
+    bottom: 2px;
     left: 6px;
     position: absolute;
     content: '';
     display: block;
-    width: 8px;
-    height: 18px;
+    width: 7px;
+    height: 20px;
     border: solid #000;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);

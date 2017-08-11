@@ -78,6 +78,7 @@
       margin: 0;
       padding: 0;
       cursor: pointer;
+      text-decoration: underline;
     }
 
     &.--sub-link {
@@ -124,7 +125,7 @@
     &.--default {}
 
     &.--toggle {
-      margin-right: 20px;
+      margin-right: 15px;
       cursor: pointer;
       display: block;
     }
