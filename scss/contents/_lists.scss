@@ -13,7 +13,8 @@
     }
 
     &.--active {
-      color: $primary-color;
+      background-color: $primary-color;
+      color: $alt-font-color;
     }
   }
 }
