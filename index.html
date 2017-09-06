@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Test04</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/8297dba7c1.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="rs/fonts/thaisansneu/thaisansneue.css">
+  <link rel="stylesheet" type="text/css" href="rs/fonts/icon/iconfont.css">
+</head>
+<html>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar__profile">
+      <img src="rs/img/user_w.svg" class="sidebar__profile --img" alt="Avatar">
+      <div class="sidebar__profile --detail">
+        <p>พ.อ.อ.หญิง</p>
+        <p>ทดสอบ 222222222222</p>
+        <a class="sidebar__link --info" id="moreInfo">ข้อมูลเพิ่มเติม</a>
+        <button class="btn --default --small pull-right">ออกจากระบบ</button>
+
+      </div>
+      <div class="sidebar__profile__hide-info" id="hideInfo">
+        <p>หมายเลขบัตรประชาชน: 2-2222-22222-22-2</p>
+        <p>วันเดือนปีเกิด: 7 ต.ค. 2511 อายุ: 48 ปี</p>
+        <p>โทรศัพท์: 089-9817551</p>
+        <button class="btn --default --small">ตั้งค่ารหัสผ่าน</button>
+      </div>
+    </div>
+    <div class="sidebar__nav">
+      <ul>
+        <li><a href="#" class="sidebar__link"><i class="ico-search"></i> คัดกรองก่อนตรวจสุขภาพประจำปี</a></li>
+        <li><a href="#" class="sidebar__link"><i class="ico-notepad"></i> ตรวจสอบผลการตรวจสุขภาพประจำปี</a></li>
+        <li><a href="#" class="sidebar__link --active" id="heartLink"><i class="ico-heart-outline"></i> ประเมินภาวะเสี่ยงโรคหัวใจ</a>
+          <ul class="sidebar__nav__sub-menu" id="subMenu">
+            <li><a href="#" class="sidebar__link --sub-link"><i class="ico-arrow_right"></i> Thai AF Heart</a></li>
+            <li><a href="#" class="sidebar__link --sub-link"><i class="ico-arrow_right"></i> Thai Cv Risk</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar__footer">
+      <p>System name</p>
+    </div>
+  </div>
+
+
+  <div class="page-content" id="pageContent">
+    <div class="topbar">
+      <div class="topbar__nav">
+        <a class="topbar__link --system">System name</a>
+        <a href="#" class="topbar__link --title">ประเมินภาวะเสี่ยงโรคหัวใจ <i class="ico-arrow_right"></i></a>
+        <a href="#" class="topbar__link --default">Thai AF Heart</a>
+        <a href="#" class="topbar__link --active">Thai Cv Risk</a>
+        <a class="topbar__link --toggle pull-right" id="toggle">☰</a>
+      </div>
+    </div>
+
+    <div class="page-content__margin-top">
+      <div class="col-4">
+        <ul class="list">
+          <li class="list__item">ภาวะเสี่ยงโรคหัวใจครั้งล่าสุดระยะเวลา 3 ปี</li>
+          <li class="list__item">2560</li>
+          <li class="list__item --active">ระดับความเสี่ยงต่ำ</li>
+        </ul>
+
+        <table class="table">
+          <tr class="table__row">
+            <td>
+              <p class="top">ปีที่ทำการประเมิน</p>
+              <select class="table__select">
+              <option value="">2560</option>
+              <option value="">2560</option>
+            </select>
+            </td>
+            <td>
+              <p class="top">เดือนที่ทำการประเมิน</p>
+              <select class="table__select">
+              <option value="">ทั้งหมด</option>
+              <option value="">ทั้งหมด</option>
+            </select>
+            </td>
+          </tr>
+          <tr class="table__row">
+            <th class="table__cell">วันที่ประเมิน</th>
+            <th class="table__cell">ผลการประเมิน</th>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">11/07/2560 16:45</td>
+            <td class="table__cell">ระดับความเสี่ยงต่ำ</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">30/06/2560 16:28</td>
+            <td class="table__cell">ระดับความเสี่ยงต่ำ</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">29/06/2560 10:44</td>
+            <td class="table__cell">ระดับความปานกลาง</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">28/06/2560 11:42</td>
+            <td class="table__cell">ระดับความเสี่ยงต่ำ</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell">27/06/2560 9:03</td>
+            <td class="table__cell">ระดับความเสี่ยงต่ำ</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell" colspan="2" align="center">
+              <div class="table__pagination">
+                <a href="#" class="table__link"><i class="ico-arrow_first"></i></a>
+                <a href="#" class="table__link"><i class="ico-arrow_left"></i></a>
+                <a href="#" class="table__link --active">1</a>
+                <a href="#" class="table__link"><i class="ico-arrow_right"></i></a>
+                <a href="#" class="table__link"><i class="ico-arrow_last"></i></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="pull-right">
+          <button class="btn --primary">เพิ่ม</button>
+          <button class="btn --default">ลด</button>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <div class="panel">
+          <div class="panel__header">วันที่ประเมิน วันศุกร์ที่ 14 กรกฎาคม 2560 12:13</div>
+          <div class="panel__content">
+            <table class="form-control">
+              <tr>
+                <td class="form-control__label">
+                  สูบบุหรี่
+                </td>
+                <td class="form-control__input">
+                  <input type="radio" name="a">สูบ
+                  <input type="radio" name="a">ไม่สูบ
+                </td>
+              </tr>
+              <tr>
+                <td class="form-control__label">
+                  ความดันโลหิต (บน)
+                </td>
+                <td class="form-control__input">
+                  <input type="text" name="a" value="116" required> mmHg/L
+                </td>
+              </tr>
+              <tr>
+                <td class="form-control__label"></td>
+                <td class="form-control__input --info">
+                  (ข้อมูล ณ วันที่ 27 ต.ค. 2559 ท่านสามารถแก้ไขให้เป็นข้อมูลปัจจุบันได้)
+                </td>
+              </tr>
+              <tr>
+                <td class="form-control__label">
+                  โคเลสเตอรอลรวม
+                </td>
+                <td class="form-control__input">
+                  <input type="text" name="a" value="116" required> mg/dl
+                </td>
+              </tr>
+              <tr>
+                <td class="form-control__label">
+                  ข้อมูลความเสี่ยง
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label class="form-control__checkbox">
+                    <input type="checkbox" checked> มีประวัติไขมันสูงในครอบครัวสายตรง (Familial hyperlipidemia)
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label class="form-control__checkbox">
+                    <input type="checkbox"> ญาติสายตรง(พ่อ แม่ พี่น้อง)เป็นโรคหลอดเลือดหัวใจก่อนอายุ 55 ปี
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label class="form-control__checkbox">
+                    <input type="checkbox"> ไขมันที่มี HDL ต่ำกว่า 39 mg/dl ในชาย หรือ ต่ำกว่า 43 mg/dl ในเพศหญิง
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label class="form-control__checkbox">
+                    <input type="checkbox"> มีไขมันไทรกลีเซอรายด์เกิน 180 mg/dl
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label class="form-control__checkbox">
+                    <input type="checkbox"> เบาหวาน หรือ ระดับน้ำตาลหลังอดอาหาร > 100 mg/dl
+                  </label>
+                </td>
+              </tr>
+            </table>
+            <div class="clearfix">
+              <button class="btn --primary pull-right">คำนวณ</button>
+            </div>
+          </div>
+          <div class="panel__footer">
+            <div class="form-control">
+              <label class="form-control__label">หมายเหตุ</label>
+              <p class="text-indent">โปรแกรมนี้จัดทำขึ้นเพื่อใช้ประเมินความเสี่ยงต่อการเสียชีวิตหรือเจ็บป่วยจากโรคหลอดเลือดหัวใจตีบตันในสิบปีข้างหน้าด้วยตนเอง โดยอาศัย ประวัติ อายุ เพศ ค่าความดันโลหิตตัวบน ผลการตรวจน้ำตาลไขมันในเลือด และประวัติครอบครัว เครื่องมือที่ใช้ประเมินคือ
+                coronary risk chart ซึ่งพบว่ามีประสิทธิผลจากงานวิจัยในข้าราชการกองทัพอากาศตั้งแต่ปี พ.ศ.2549 (ASIAN HEART JOURNAL 2012 vol 20;1-11)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/toggle.js" type="text/javascript"></script>
+</html>
